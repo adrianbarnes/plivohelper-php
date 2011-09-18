@@ -46,7 +46,7 @@
     $g = $r->addgetDigits(array("numDigits" => "1", "timeout" => "25",
             "playBeep" => "true"));
     $g->addPlay("/usr/local/freeswitch/sounds/en/us/callie/ivr/8000/ivr-hello.wav", array("loop" => "10"));
-    $r->addWait(array("length" => "5", "transferEnabled" => "true"));
+    $r->addWait(array("length" => "5"));
     $r->addPlay("/usr/local/freeswitch/sounds/en/us/callie/ivr/8000/ivr-hello.wav", array("loop" => "10"));
     $r->addRecord(array("bothLegs" => "true"));
     $r->addredirect();
@@ -58,7 +58,7 @@
         <GetDigits numdigits="1">
             <Play loop="2">/usr/local/freeswitch/sounds/en/us/callie/ivr/8000/ivr-hello.wav</Play>
         </GetDigits>
-        <Pause length="5"/>
+        <Wait length="5"/>
         <Play loop="2">/usr/local/freeswitch/sounds/en/us/callie/ivr/8000/ivr-hello.wav</Play>
         <Record/>
         <Hangup/>
