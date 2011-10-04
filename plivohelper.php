@@ -625,7 +625,7 @@
 
         protected $valid = array('action', 'method', 'timeout','finishOnKey',
                                  'maxLength', 'bothLegs', 'playBeep',
-                                 'fileFormat', 'filePath', 'fileName');
+                                 'fileFormat', 'filePath', 'fileName', 'redirect');
 
         /**
         * Record Constructor
