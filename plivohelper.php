@@ -927,7 +927,8 @@
     */
     class GetSpeech extends Element {
 
-        protected $valid = array('action','method','timeout', 'engine', 'grammar', 'playBeep');
+        protected $valid = array('action','method','timeout', 'engine', 'grammar', 
+                                 'playBeep', 'grammarPath');
 
         protected $nesting = array('Speak', 'Play', 'Wait');
         /**
